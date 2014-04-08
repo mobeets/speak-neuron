@@ -1,0 +1,97 @@
+<html>
+<head>
+    <link href='static/speak-neuron.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<span id="home-link"><a href="http://www.jehosafet.com">take me back</a></span>
+	<div class="wrapper">
+		<div id="sidebar" class="unselectable">
+			<div id="nav-title">
+				<h1><a href="index">Speak Neuron</a></h1>
+			</div>
+			<div id="icons">
+				<div id="home-icon" class="icon">
+	    			<a href="index" title="Home"><img id="home-icon-img" src="static/home-icon.png"/></a>
+	    		</div>
+	    		<div id="book-icon" class="icon">
+	    			<a href="glossary" title="Glossary"><img id="book-icon-img" src="static/g-icon.png"/></a>
+	    		</div>
+	    		<div id="app-icon" class="icon">
+	    			<a href="appendix" title="Appendix"><img id="app-icon-img" src="static/a-icon.png"/></a>
+	    		</div>
+	    	</div>
+	    	<div id="nav-page">
+                <h3>Appendix</h3>
+            </div>
+	    </div>
+		<div id="appendix">
+			<br>
+			<h2>Quarantined mathematics</h2>
+				<a name="1" class="anchor"></a>
+				<h3 id="envelopes-response-histogram"><sup><a href="appendix#1">[1]</a></sup> Envelope&#8217;s response histogram</h3>
+<p>Here&#8217;s an example. Pretend the results from Experiment 1 looked like this:</p>
+<ul>
+<li>Trial 1: 5 beeps</li>
+<li>Trial 2: 6 beeps</li>
+<li>Trial 3: 7 beeps</li>
+<li>Trial 4: 5 beeps</li>
+<li>Trial 5: 5 beeps</li>
+<li>Trial 6: 2 beeps</li>
+</ul>
+<p>A histogram shows how often each response beep count happened, across all of your trials. The response &#8220;5 beeps,&#8221; for example, happened in different three trials, while the responses &#8220;6 beeps,&#8221; &#8220;7 beeps,&#8221; and &#8220;2 beeps&#8221; each occurred only once. The histogram, then, would look like this:</p>
+<p><img id="im-20" src="images/20.jpeg"></p>
+<p>A histogram is a way of displaying experiment results in a way that makes it clear which responses were the most common. In this example, it&#8217;s now easy to see that 5 beeps was the most common response in the experiment, followed by 2 beeps, 6 beeps, and 7 beeps.</p>
+
+				<a name="2" class="anchor"></a>
+				<h3 id="envelopes-tuning-curve-for-broccoli-size"><sup><a href="appendix#2">[2]</a></sup> Envelope&#8217;s tuning curve for broccoli size</h3>
+<p>Let me explain what I mean. I started out by looking at all the responses from trials where the stimulus size was a 1 inch piece of broccoli, taking the average beep count of all those trials, and then plotting that new average value on the graph.</p>
+<p>(For example, pretend that when I showed Envelope the 1 inch broccoli these were the beep counts I recorded: 5, 8, 9, 12, 8, 6. Then the average beep count for 1 inch broccoli is the average of those values: (5+8+9+12+8+6)/6 = 48/6 = 8 beeps per second.)</p>
+<p>After that, I fit a line (or, a &#8220;curve&#8221;) to the average beep responses&mdash;that line is the tuning curve.</p>
+<p>In Envelope&#8217;s case the tuning curve is just a straight line, but in general a Neuron might need a more complicated curve to describe his average beep responses. I recommend befriending only Neurons with linear tuning curves if possible, just because their beeps will be a bit easier to predict without the aid of a calculator.</p>
+
+				<a name="3" class="anchor"></a>
+				<h3 id="finding-the-best-criterion"><sup><a href="appendix#3">[3]</a></sup> Finding the best criterion</h3>
+<p>An example will make this clearer. Pretend that at the end of Experiment 3, these were Harry&#8217;s beep responses that I recorded:</p>
+<ul>
+<li>blue stimuli: 12 beeps, 10 beeps, 11 beeps, 11 beeps, 6 beeps</li>
+<li>not-blue stimuli: 5 beeps, 13 beeps, 12 beeps, 6 beeps, 6 beeps</li>
+</ul>
+<p>To explain the calculation of the various rates, I&#8217;ll pick a criterion of 8 beeps and see how many trials I would guess right. If a trial has 8 beeps or more I&#8217;ll guess the stimulus was blue, and if it has less than that I&#8217;ll guess not-blue.</p>
+<p>These would be my guess classifications for the responses above:</p>
+<ul>
+<li>blue stimuli: H, H, H, H, M</li>
+<li>not-blue stimuli: CR, FA, FA, CR, CR</li>
+</ul>
+<p>So I had 4 hits (H), 1 miss (M), 3 correct rejections (CR), and 2 false alarms (FA). Now I can calculate the following rates:</p>
+<ul>
+<li>hit rate = H/(H+M) = 4/(4+1) = 4/5 = 0.8</li>
+<li>correct rejection rate = CR/(FA+CR) = 3/(2+3) = 3/5 = 0.6</li>
+<li>false alarm rate = FA/(FA+CR) = 2/(2+3) = 2/5 = 0.4</li>
+<li>miss rate = M/(H+M) = 1/(4+1) = 1/5 = 0.2</li>
+<li>accuracy rate = (H+CR)/(H+CR+FA+M) = (4+3)/(4+3+2+1) = 7/10 = 0.7</li>
+<li>incorrect rate = (FA+M)/(H+CR+FA+M) = (2+1)/(4+3+2+1) = 3/10 = 0.3</li>
+</ul>
+<p>In the example above, the criterion of 8 beeps gave me an accuracy rate of 0.7, or 70%. If I wanted to maximize my accuracy rate I would do these calculations for each criterion (0 beeps, 1 beep, &#8230;) and just look for the criterion that had the highest accuracy rate.</p>
+
+				<a name="4" class="anchor"></a>
+				<h3 id="roc-curve"><sup><a href="appendix#4">[4]</a></sup> ROC curve</h3>
+<p>A Neuron allowing perfect discrimination of the stimulus will yield an ROC plot with an area under the curve of 1.0, while the worst Neuron possible (that is, a Neuron who is no more useful than a coin flip) will yield an area under the curve of 0.5. It took me quite a while to understand the powers of this mysterious graph.</p>
+<p>Eventually, though, it occurred to me that no matter what Neuron you use, a criterion of 0 beeps will always yield a hit rate of 1.0 and a false alarm rate of 1.0. Similarly, at the very highest criterion the hit rate will always be 0.0 and the false alarm rate will be 0.0. This means that every ROC curve imaginable must have points at (0.0, 0.0) and at (1.0, 1.0). Consequently, the smallest area under an ROC curve is 0.5.</p>
+<p>But why is the largest area possible 1.0? I tried to imagine what the ROC curve would look like for the sort of perfect Neuron I mentioned at the end of Experiment 3&mdash;a Neuron whose responses to the two sorts of stimuli would have no overlapping region. If this Neuron was really a perfect discriminator there&#8217;d be a criterion giving me a hit rate of 1.0 and a false alarm rate of 0.0. The ROC for this perfect Neuron, then, would have a point at (0.0, 1.0) as well as the points at (0.0, 0.0) and (1.0, 1.0). The ROC curve in this case would be a square&mdash;that is, a square with an area of 1!</p>
+<div class="ed-note">
+<p>This section&#8217;s lack of clarity is perhaps the best evidence that the author fell short on his intention that this guide be aimed at a Neuron owner who is ignorant of mathematics. However, for those frustrated by the author&#8217;s vagueness, a clarification of the author&#8217;s methods for calculating discrimination is in order. Rather than attempting a clearer mathematical explanation of the author&#8217;s methods myself, however, I&#8217;d prefer to recommend the reader to the professionals:</p>
+<ol style="list-style-type: decimal">
+<li>For a more detailed mathematical explanation of the author&#8217;s use of the ROC curve in general, the author is referred to <em>Basic principles of ROC analysis</em> [Metz CE, 1978].</li>
+<li>For clearer instructions regarding finding the area under a curve, the famous Chilean botanist Lornwylder has written a very readable classic on the subject, called <em>The Ultimate AUC: How I Found the Area Under All My Curves and Learned to Like It</em> [2015].</li>
+</ol>
+<p>-WT</p>
+</div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="static/speak-neuron.js"></script>
+</body>
+</html>

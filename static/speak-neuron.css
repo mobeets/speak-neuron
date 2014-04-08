@@ -1,0 +1,265 @@
+/* for moving anchor tags up so they're not hidden behind top bar */
+a.anchor{
+    display: block;
+    position: relative;
+    float: left;
+    top: -100px;
+    visibility: hidden;
+}
+
+sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dotted black;
+    /*background: #999;*/
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.ch-link {
+    text-decoration: none;
+    border: none;
+}
+.ch-link:hover {
+    color: green;
+}
+
+h1 a {
+    border: none;
+}
+
+#home-link {
+    font-style: italic;
+    font-size: 11px;
+    top: 40px;
+    left: 40px;
+}
+.gloss-link {
+    text-decoration: none;
+    border: none;
+}
+.gloss-link:hover {
+    border-bottom: 1px dotted;
+}
+
+h1, h2, h3, h4, h5, ul, ol, #ch-list, .ed-note {
+    font-family: 'Inconsolata';
+}
+body {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    line-height: 140%;
+}
+
+.wrapper {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#sidebar {
+    font-family: 'Inconsolata';
+    overflow: hidden;
+    position: fixed;
+    width: 700px;
+    height: 70px;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+    border-bottom: 1px solid;
+}
+#sidebar #nav-title {
+    width: 250px;
+    float: left;
+    overflow: hidden;
+}
+#sidebar #icons {
+    float: left;
+    margin-left: 60px;
+    /*width: 200px;*/
+}
+#sidebar #nav-page {
+    float: right;
+    margin-top: 7px;
+}
+#sidebar h1:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#sidebar .icon {
+    margin-top: 25px;
+    margin-right: 10px;
+    float: left;
+    overflow: hidden;
+}
+.icon a {
+    border: none;
+    opacity: 1.0;
+}
+.icon a:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+#home-icon img {
+    height: 17px;
+    margin-top: 2px;
+}
+#link-icon img {
+    height: 17px;
+    margin-top: 2px;
+}
+#book-icon img {
+    height: 23px;
+    margin-top: 2px;
+}
+#app-icon img {
+    margin-top: 3px;
+    height: 18px;
+}
+
+#sidebar #nav-buttons {
+    float: right;
+    margin-top: 27px;
+}
+#nav-page #begin {
+    color: green;
+}
+#sidebar #prev:hover, #sidebar #next:hover, #sidebar #begin:hover {
+    border-bottom: 1px dotted;
+    cursor: hand;
+}
+
+#appendix, #glossary, #chapters {
+    overflow: hidden;
+    /*top: 100px;*/
+}
+#chapters {
+    /*top: 150px;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+#glossary .term-inner {
+    font-style: italic;
+    /*text-decoration: underline;*/
+}
+#glossary .term {
+    width: 20%;
+    float: left;
+}
+#glossary .defn {
+    width: 80%;
+    float: left;
+}
+#glossary p {
+    /*font-style: italic;*/
+}
+
+#appendix p {
+    padding-left: 37px;
+}
+#appendix ol, #appendix ul {
+    padding-left: 85px;
+}
+#appendix h3 {
+    border-bottom: 1px dotted;
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+#copyright {
+    font-size: 14px;
+}
+
+.chapter {
+    margin-bottom: 50px;
+}
+.chapter h3 {
+    /*padding-left: 0px;*/
+    font-weight: bold;
+    /*font-style: italic;*/
+}
+
+#glossary .ed-note {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.ed-note {
+    font-style: italic;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: gray;
+}
+.note {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-left: 15px;
+    line-height: 200%;
+    background-color: #EDEDED;
+}
+
+.graph-title {
+    font-family: 'Inconsolata';
+    margin:auto;
+    display: table;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    /*text-align: center;*/
+}
+body img {
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#im-1a {
+    /*position: fixed;*/
+    /*height: 200px;*/
+    width: 698px;
+    border: 1px solid black;
+    z-index: -1;
+}
+#im-7, #im-10 {
+    height: 200px;
+}
+#im-8 {
+    height: 400px;
+}
+#im-14 {
+    height: 100px;
+}
+#im-15 {
+    height: 500px;
+}
+#im-11, #im-12, #im-16, #im-18 {
+    height: 400px;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

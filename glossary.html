@@ -1,0 +1,174 @@
+<html>
+<head>
+    <link href='static/speak-neuron.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<span id="home-link"><a href="http://www.jehosafet.com">take me back</a></span>
+	<div class="wrapper">
+		<div id="sidebar" class="unselectable">
+			<div id="nav-title">
+				<h1><a href="index">Speak Neuron</a></h1>
+			</div>
+			<div id="icons">
+				<div id="home-icon" class="icon">
+	    			<a href="index" title="Home"><img id="home-icon-img" src="static/home-icon.png"/></a>
+	    		</div>
+	    		<div id="book-icon" class="icon">
+	    			<a href="glossary" title="Glossary"><img id="book-icon-img" src="static/g-icon.png"/></a>
+	    		</div>
+	    		<div id="app-icon" class="icon">
+	    			<a href="appendix" title="Appendix"><img id="app-icon-img" src="static/a-icon.png"/></a>
+	    		</div>
+	    	</div>
+	    	<div id="nav-page">
+                <h3>Glossary</h3>
+            </div>
+	    </div>
+		<div id="glossary">
+			<br>
+			<a name="criterion" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">criterion</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>In the context of Neuron decoding, a criterion is a threshold used to decide the answer to a question with two possible answers using only the Neuron&#8217;s beep count.</p>
+<p>Example: I decide that whenever Harry beeps less than 5 times in a second I will blink my right eye. If he beeps more than 5 times in a second I will blink my left eye. My criterion for deciding which eye to blink is then &#8220;5 beeps per second.&#8221;</p>
+
+            </div>
+
+			<a name="discrimination" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">discrimination</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>Roughly speaking, this is a value that represents one&#8217;s ability to guess the category of a stimulus using a Neuron&#8217;s beeps&mdash;without requiring you to first choose a criterion.</p>
+<p>Sharply speaking, this is a &#8220;criterion-free metric&#8221; calculated by finding the area under an ROC curve.</p>
+
+            </div>
+
+			<a name="histogram" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">histogram</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p class="ed-note">
+See <sup><a href="appendix#1">[1]</a></sup> for an example. -WT
+</p>
+
+
+
+            </div>
+
+			<a name="magic-beep-count" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">magic beep count</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>(aka <em>optimal spike-count threshold</em>) This is the best possible criterion one can use when listening to a Neuron and trying to learn something about the world. What is &#8220;best&#8221; in this context is an assumption the Neuron owner must make.</p>
+<p class="ed-note">
+See <sup><a href="appendix#2">[2]</a></sup> for an example. -WT
+</p>
+
+
+
+            </div>
+
+			<a name="rate-coding-hat" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">rate coding hat</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>When someone wears this hat it means he will count the number of times a Neuron beeps in a fixed amount of time in order to understand what that Neuron is saying.</p>
+
+            </div>
+
+			<a name="response-field" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">response field</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>A property whose magnitude in the Neuron&#8217;s environment will, when varied, regularly affect the Neuron&#8217;s beeping.</p>
+<p>Example: When the wind blows from the North, my Neuron beeps much more than average. When the wind is not blowing at all he beeps normally. When the wind blows from the South he beeps much less than average. My Neuron&#8217;s response field seems to be the &#8220;Northness-of-the-wind.&#8221;</p>
+
+            </div>
+
+			<a name="response" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">response</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>The way a Neuron beeps after seeing a stimulus.</p>
+
+            </div>
+
+			<a name="ROC-curve" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">ROC curve</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>A graph showing how one&#8217;s hit rate and false alarm rate vary when guessing the category of a stimulus using only the Neuron&#8217;s beep count and all possible criteria.</p>
+
+            </div>
+
+			<a name="sombrero" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">sombrero</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>When someone wears this hat it means he will use the precise times a Neuron beeps in order to understand what the Neuron is saying.</p>
+
+            </div>
+
+			<a name="stimulus" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">stimulus</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>The name given to anything one shows a Neuron.</p>
+<p class="ed-note">
+Usually when a Neuron is shown a stimulus, his beeps afterwards are assumed to be his response to that stimulus. -WT
+</p>
+
+
+
+            </div>
+
+			<a name="tuning-curve" class="anchor"></a>
+            <div class="term">
+                <p>
+                    <a class="term-inner">tuning curve</a>:
+                </p>
+            </div>
+            <div class="defn">
+                <p>A graph showing how a Neuron&#8217;s average beep count varies when he sees stimuli with different values in his response field.</p>
+
+            </div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="static/speak-neuron.js"></script>
+</body>
+</html>

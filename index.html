@@ -1,0 +1,461 @@
+<html>
+<head>
+    <link href='static/speak-neuron.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<span id="home-link"><a href="http://www.jehosafet.com">take me back</a></span>
+	<div class="wrapper">
+		<div id="sidebar" class="unselectable">
+			<div id="nav-title">
+				<h1><a href="">Speak Neuron</a></h1>
+			</div>
+			<div id="icons">
+				<div id="home-icon" class="icon">
+	    			<a href="" title="Home"><img id="home-icon-img" src="static/home-icon.png"/></a>
+	    		</div>
+	    		<div id="book-icon" class="icon">
+	    			<a href="glossary" title="Glossary"><img id="book-icon-img" src="static/g-icon.png"/></a>
+	    		</div>
+	    		<div id="app-icon" class="icon">
+	    			<a href="appendix" title="Appendix"><img id="app-icon-img" src="static/a-icon.png"/></a>
+	    		</div>
+	    		<div id="link-icon" class="icon">
+	    			<a href="" title="Link to current chapter"><img id="link-icon-img" src="static/link-icon.png"/></a>
+	    		</div>
+	    	</div>
+			<div id="nav-buttons">
+		        <span id="prev"><< Prev</span> | 
+		        <span id="cur">-1
+		        </span>
+		        of
+		        <span id="total">21</span> |
+		        <span id="next">
+		        	Next >>
+		        </span>
+		    </div>
+		    <div id="nav-page">
+		    	<h3><span id="begin">BEGIN!</span></h3>
+		    </div>
+	    </div>
+		<div id="chapters">
+			<div id="ch-title" class="chapter">
+				<a name="title" class="anchor"></a><br>
+				<div id="title">
+<h2>A guide to understanding your new pet Neuron</h2>
+<h3>(Author unknown)</h3>
+<h4>2nd Edition</h4>
+<h4>Edited and illustrated by Wilayanuk Tamachandran</h4>
+</div>
+<img id="im-1a" src="images/face.jpeg">
+<hr>
+<span id="ch-list"></span>
+<hr>
+<div id="copyright">
+<p>Copyright &copy; 2012</p>
+<p>First edition published in 2014</p>
+<p>Second edition published in 2026</p>
+<p>Written in Austin, Texas</p>
+<p>Illustrated in Melbourne, Australia</p>
+This book is presented subject to the condition that it shall not, by way of trade or otherwise, be lent, re-sold, hired out, read, looked at, printed and then placed on a bookshelf, or otherwise circulated unless the reader pledges to stop watching sub-par television shows.
+</div>
+<hr>
+<p>Published by <a href="https://twitter.com/jehosafet" target="_blank"><span class="citation">@jehosafet</span></a>.</p>
+
+			</div>
+			<div id="ch-foreword" class="chapter">
+				<a name="foreword" class="anchor"></a><br>
+				<h3 id="foreword">Foreword</h3>
+<p>This guide to the language of pet Neurons was first published anonymously fourteen years ago, in 2012. Though its author has remained anonymous, we find in this now-classic text the following clues to his identity: He owns a copy of Dayan and Abbott&#8217;s <em>Theoretical Neuroscience</em>; his places of residence have seen multiple large shipments sent from China. He has a familiarity with stereotypical Mexican headware, a predilection for the music of Archure, a propensity to reference Maya Angelou. He owns a dog.</p>
+<p>Despite these many clues we find ourselves with very few suspects. The Boogie Beep Man of Christchurch, New Zealand has denied all accusations that he might have had something to do with the authorship of this guide. Michael J. Frayn FRSL, in the Epilogue to his book <em>Speak After the Beep Revisited: Studies in the Art of Communicating with Avatars of Myself</em>, mentions that &#8220;&#8230;and I have been both disgusted and exhausted by the volume of email sent to me under the misconception that I was the author of some obscure educational comic involving a cartoon neuron and a magician.&#8221;</p>
+<p>Magician, indeed. Perhaps most perplexingly, there appears to be no record either on the Web or even in the International Magician&#8217;s Registry of anyone performing as a magician under the stage name of &#8220;The Man Who Speaks in Beeps.&#8221; Yet as fans of this guide will surely appreciate, if the anonymous author is not a magician then he is surely an artist: No one, in the fourteen years following the publication of <em>Speak Neuron</em>, has written quite so eloquently on the subject of understanding the language of a Neuron pet.</p>
+<p>In this second edition of <em>Speak Neuron</em> I have taken the liberty of updating the text for the benefit of the modern reader. In its brief history the book has had its successes but it has also seen its fair share of criticism. Some have pointed out that the author had an apparent prejudice against Neurons without eyes&mdash;that is, by depicting exclusively Neurons who encode the visual world. (&#8220;Where are all the Neurons with ears, or noses, or tongues?&#8221; one might say.) But such complaints irritate me in their irrelevance; the methods of understanding one&#8217;s Neuron pet put forth in this book are hardly concerned with the particulars of the Neuron&#8217;s response field.</p>
+<p>Perhaps the most notable criticism has come from Henry &#8220;Hank&#8221; Terry of <em>The New Yorker</em>, who balked at the author&#8217;s claim in the opening chapters of the guide that he had written it with the anti-mathematically-inclined Neuron pet owner in mind, pointing out in particular the section regarding ROC curves. And so, in order to guarantee that this second edition is at least slightly more accessible to the audience for whom the book was apparently intended, some adjustments have been made by my own liberty:</p>
+<ul>
+<li>the writing of this Foreword</li>
+<li>the addition of a few footnotes</li>
+<li>illustrations and updated graphs</li>
+<li>statements of a mathematical nature, wherever possible, have been relegated to the back of the book</li>
+</ul>
+<p>The latter change has been made so that the reader may, if he so chooses, ignore the more technical details and read the text as it was intended: as a guide and not as a textbook. The majority of the mathematical content&mdash;especially the example calculations that the author performs&mdash;has been quarantined to the back of the book, just before the glossary. The references to this section in the book can be found in brackets, e.g. <sup><a href="appendix#1">[1]</a></sup>.</p>
+<p>This content has been relocated rather than removed so that the book may still appeal to that minority still willing to perform arithmetic and understand graphs. However, in some sections (notably the section regarding discrimination) such mathematical quarantining was not feasible, as relocating the equations would seriously diminish the clarity of the story. I hope that these minor equations do not intimidate you as they appear to have intimidated Hank Terry.</p>
+<p>Finally, please note that at times the original author reveals the extremely unsympathetic attitude with which Neuron pet owners of the 2010&#8217;s treated their supposedly beloved pets. I have allowed these moments to remain in this edition purely for their historical interest.</p>
+<p>And with these humble words, dear reader, I leave you to your reading&mdash;however momentarily. I hope that you may enjoy this second edition as much as I have, but to no greater extent than you did the first.</p>
+<p><em>-Wilayanuk Tamachandran (WT), July 2026</em></p>
+
+			</div>
+			<div id="ch-1" class="chapter">
+				<a name="1" class="anchor"></a><br>
+				<h3 id="my-new-pet-neuron">My new pet Neuron</h3>
+<p><img id="im-1" src="images/1.jpeg"></p>
+<p>One morning a strange package arrived for me in the mail&mdash;the labels said it was from China and that it should remain refrigerated. I opened it up hastily, and inside I found a strange teardrop-shaped guy with tree roots coming out of his rear end.</p>
+<p>It was my brand new pet Neuron! I&#8217;d been waiting for this moment. I&#8217;d always wanted a pet, and I&#8217;d heard that Neurons were the computational beings responsible for human intelligence and consciousness. What good times the two of us would surely have! Two competent beings living in harmony, each with an ability to communicate our deepest, most intellectual thoughts&#8230;It would be a perfect match.</p>
+
+			</div>
+			<div id="ch-2" class="chapter">
+				<a name="2" class="anchor"></a><br>
+				<h3 id="my-neuron-will-never-shut-up">My Neuron will never shut up</h3>
+<p><img id="im-2" src="images/2.jpeg"></p>
+<p>And yet, I soon realized that having a pet Neuron was not entirely what I&#8217;d imagined. He seemed to be speaking in some sort of code. He beeped<sup>*</sup>. Continuously, sometimes, and then nothing for a bit, and then he&#8217;d beep some more. Beeping, each time with a glassy look in his eyes, almost as if he wasn&#8217;t aware of the noise he was making.</p>
+<p class="ed-note">
+<sup>*</sup> Neuroscientists today say that Neurons &#8220;spike,&#8221; but if you put a microphone to a Neuron you will hear that &#8220;beep&#8221; is, as the author suggests, a more precise onomatopoeia than &#8220;spike&#8221; for the sound of a chattering Neuron. -WT
+</p>
+
+<p>I became very sensitive to the incessant noise of my new friend; the endless patterns of beeps kept me up at night. I tried making wild gestures at my Neuron but he still wouldn&#8217;t stop beeping. Eventually I grew desperate and bought the closest thing I could find to a Neuron handbook, Dayan and Abbott&#8217;s <em>Theoretical Neuroscience</em>, and there I searched for the answers to the most fundamental questions:</p>
+<ul>
+<li>What is my Neuron saying to me?</li>
+<li>What do I do?</li>
+<li>When will he stop?</li>
+</ul>
+<p>But the book was filled with equations and terminology that were practically as cryptic to me as my Neuron&#8217;s beeps. Without some serious study, I realized, I might never form a positive relationship with my new pet.</p>
+<p>Thankfully, I persevered. I&#8217;ve now had quite a few pet Neurons and I&#8217;ve learned a few things about Neuron-speak along the way. And yet, I&#8217;ve realized, people all around the world must surely be going through the same problems that I had, people with pet Neurons of their own and a now-perpetual look of confusion on their faces.</p>
+<p>This book will not explain how to speak fluent Neuron, but it will hopefully explain the basic approach. I won&#8217;t show many equations, but quite often I&#8217;ve realized that some simple experiments and graphs really are the best way to understand a Neuron. I will do my best to explain how a neuroscientist studies these strange creatures so that you, as pet owner, might gain some insight into the bizarre world of Neuron-speak without having to first earn a degree in neuroscience.</p>
+<p>By the way, as for those three questions I first asked of my Neuron: The answer to my last question is, He never really stops. The answer to the question before is that you&#8217;ll just have to get over it.</p>
+<p>And as for the first question? No one actually knows. All I really know is that Neurons beep at some things more than others. But that question, as you&#8217;ll see, is the key to getting to know your new pet.</p>
+
+			</div>
+			<div id="ch-3" class="chapter">
+				<a name="3" class="anchor"></a><br>
+				<h3 id="neurons-beep-at-some-things-more-than-others">Neurons beep at some things more than others</h3>
+<p><img id="im-3" src="images/3.jpeg"></p>
+<p>All of my Neuron&#8217;s beeps really overwhelmed me at first. Why did he just keep talking if he knew I couldn&#8217;t understand him? We&#8217;d go out for dinner sometimes, and I always felt so awkward. He&#8217;d just talk and talk and I wouldn&#8217;t say a word.</p>
+<p>However, I soon noticed that while my Neuron never said anything interesting in English, he did seem to be communicating something. Clearly the beeps were not meant to be understood by me directly, but I had faith that my Neuron was doing more than just randomly beeping for no good reason at all.</p>
+<p>I tried showing my Neuron my favorite pair of shoes. Then I showed him the weirdest face I knew how to make. Maybe it was my imagination but I thought I noticed an apparent mood swing in his beeps when I took away the shoes and started making the weird face. This got me thinking: What if I could show my Neuron lots of different things, and observe whether those things made my Neuron beep more often, or less?</p>
+
+			</div>
+			<div id="ch-4" class="chapter">
+				<a name="4" class="anchor"></a><br>
+				<h3 id="beep.">Beep.</h3>
+<p>I would need to design an experiment, I realized, to keep things in order. If I wanted to see whether my Neuron was beeping more or less I would need to start counting his beeps. But what is a beep, really?</p>
+<p>After a bit of observation&mdash;and after a few re-reads of the first chapter of my neuroscience textbook&mdash;it became apparent that each Neuron beep is essentially identical to the others. This means that if a Neuron is trying to communicate something with us humans then the only thing that changes in his speech is how frequently he beeps. Call it his beep rate, spike rate&mdash;whatever, it doesn&#8217;t matter. The only important thing to understand is that a Neuron communicates thoughts in an entirely different way than we do.</p>
+<p>Each word a human says means something different, and it doooeesssn&#8217;t&#8230;..mattttter&#8230;&#8230;&#8230;&#8230;.whenyousay&#8230;each word. But a Neuron only knows the word &#8220;BEEP,&#8221; and so if he wants to communicate something he can only vary when or how much he beeps.</p>
+<p>But if a Neuron&#8217;s beeps are identical, wouldn&#8217;t it be possible that my Neuron is speaking in silences, too? Instead of my Neuron saying &#8220;BEEP&#8230;BEEPBEEP&#8230;&#8230;BEEP,&#8221; for example, maybe he&#8217;s actually saying &#8220;BEEP-SILENCE-BEEP-BEEP-SILENCE-SILENCE-BEEP.&#8221; Truly, as I once read in a famous book on Neurons, &#8220;Silence speaks as well as words.&#8221;<sup>*</sup></p>
+<p class="ed-note">
+<sup>*</sup> The source of this quote is unknown. We believe that the author may have invented this quote himself to support his point. -WT
+</p>
+
+<p>So a Neuron knows two words, BEEP and SILENCE. We can transcribe Neuron-speak, then, as a string of zeros and ones. A &#8220;1&#8221; means that the Neuron beeped at a certain time, and a &#8220;0&#8221; means he didn&#8217;t. I can now write &#8220;BEEP-SILENCE-BEEP-BEEP-SILENCE-SILENCE-BEEP&#8221; as &#8220;1011001.&#8221; It turns out that a lot of people, including dear old Dayan and Abbott from my textbook, like to transcribe Neuron-speak in this binary<sup>*</sup> form.</p>
+<p class="ed-note">
+<sup>*</sup> A binary alphabet allows one to distinguish between two different things&mdash;in this case, between a BEEP and a SILENCE. Morse code, on the other hand, could be represented as a quaternary language: it lets one distinguish between four different sounds&mdash;the characters &#8220;dah&#8221; and &#8220;dit&#8221; and two types of silences. -WT
+</p>
+
+
+
+			</div>
+			<div id="ch-5" class="chapter">
+				<a name="5" class="anchor"></a><br>
+				<h3 id="a-quick-story-about-my-first-neuron">A quick story about my first Neuron</h3>
+<p><img id="im-4" src="images/4.jpeg"></p>
+<p>Shortly after my first hunch that my Neuron could be beeping at some things more than others, I had another stroke of insight. I was hanging out with my Neuron&mdash;I found a little card in the box he came in that said his name was &#8220;Envelope&#8221;&mdash;and I was surely wondering how in the world I was ever going to become friends with an opinionated pet with a two-word vocabulary.</p>
+<p>It was dinner time, and I was about to cook some veggies. Envelope was sitting on the kitchen counter beeping at what seemed to be his normal rate, but then I brought out a piece of green broccoli and he just started going mad. What I mean to say is: He started beeping more than ever before!</p>
+<p>I was confused at first&#8230;I put down the broccoli and ran over to him, stroking his dendrites<sup>*</sup>. &#8220;Envelope, what&#8217;s wrong?&#8221; No response. In fact, the moment I&#8217;d set down the broccoli he resumed beeping normally. But once I went back to the counter, picked up the broccoli and started chopping it, Envelope again went nuts!</p>
+<p class="ed-note">
+<sup>*</sup> Dendrites are like a Neuron&#8217;s hair&mdash;only dendrites also conduct electricity. A Neuron is in fact deaf to the beeping of any other Neuron unless he touches a dendrite to the other Neuron&#8217;s leg, aka axon. -WT
+</p>
+
+<p>I decided at first to just ignore him (I was kind of angry with him that day; earlier I was trying to listen to my favorite Archure song and Envelope had insisted on sitting in my lap and beeping right in my ear the entire time), but I wasn&#8217;t in the best mood so I eventually decided to sort of taunt him with the broccoli. I chopped the broccoli into smaller and smaller pieces, and each time I made the broccoli smaller I made sure to show Envelope how tiny his precious broccoli was getting: &#8220;How about that, you strange Neuron!&#8221; I yelled.</p>
+<p>The really strange thing, though, was that Envelope&#8217;s frantic beeping slowed regularly as I made the broccoli smaller and smaller. In the end, when the broccoli was finally torn to crumbs, Envelope was beeping at his normal rate again, apparently unfazed by all my antics.</p>
+<p>I felt kind of stupid having wasted a huge chunk of produce teasing a Neuron, but eventually I calmed down and picked up another piece of broccoli to start chopping for dinner. Envelope could see it, though, and he started beeping madly again! And that&#8217;s when it finally hit me: Envelope had something to say about broccoli.</p>
+
+			</div>
+			<div id="ch-6" class="chapter">
+				<a name="6" class="anchor"></a><br>
+				<h3 id="why-your-neuron-matters-more-than-your-dog">Why your Neuron matters more than your dog</h3>
+<p><img id="im-5" src="images/5.jpeg"></p>
+<p>After consulting my neuroscience textbook again, Envelope&#8217;s antics made a whole lot more sense. According to the textbook there are lots of things that might make a Neuron beep more than normal. It might be something abstract, like differential equations; it might be something incredibly specific, like the expression on your face when you watch television. It might be broccoli.</p>
+<p>Dayan and Abbott call the part of a stimulus that regularly varies a Neuron&#8217;s beeps its <em>response field</em> or <em>receptive field</em>, and finding a Neuron&#8217;s response field is apparently the first step to learning more about him. In other words, I was on the right track!</p>
+<p>So each Neuron&mdash;though he may be a very talkative creature in general&mdash;will have some property, his response field, that regularly varies his beeping based on how much of it is in his environment. If that property is broccoli-ness, as it seems to be for Envelope, he will tend to beep more when he sees stimuli containing a high level of broccoli-ness.</p>
+<p>But what is a Neuron saying about his response field? If we were to borrow an information theorist&#8217;s vocabulary, we might say that a Neuron&#8217;s beeps are communicating information that is encoded<sup>*</sup> in the Neuron&#8217;s beeping language. In simpler words, we&#8217;d just say that a Neuron&#8217;s beeps contain information about the world around them, in a form we may understand or not. As pet Neuron owners we must learn how to decode our Neuron&#8217;s beeps in order to uncover this information.</p>
+<p class="ed-note">
+<sup>*</sup> Again, Morse code comes to mind. Each letter is made of a predictable series of dits and dahs, but until one knows how to decode those dits and dahs it just sounds like noise. -WT
+</p>
+
+<p>The interesting thing is that dogs and cats are talkative creatures, too, but for some reason we don&#8217;t think of a dog or cat as encoding information when they bark or meow. Truthfully, a dog&#8217;s barks probably encode just as much information about his environment as a Neuron&#8217;s beeps. But since my brain is full of Neurons and not dogs, I&#8217;m going to assume that decoding a Neuron&#8217;s beeping is a much more worthwhile task than decoding a dog&#8217;s barking. Plus, my dog only seems to encode information relating to the capacity of his stomach and the whereabouts of squirrels.</p>
+<p>I&#8217;ve read that if you order your Neurons from the right place, you can get Neurons who beep more at straight lines, or at anything that moves to the left. And to a real neuroscientist, the dream Neuron is supposedly one who beeps the most at your grandmother&mdash;the so-called &#8220;Grandmother Neuron.&#8221;<sup>*</sup> Supposedly, somewhere in the brain there&#8217;s a Neuron who will beep more than usual only if he sees your grandmother: It doesn&#8217;t matter what she&#8217;s wearing, or if she&#8217;s baking you cookies, or anything like that. She can be sitting or standing and this Neuron just doesn&#8217;t care. Show him your grandma, and he&#8217;ll beep like mad.</p>
+<p class="ed-note">
+<sup>*</sup> If you, reader, ever happen upon such a Grandmother Neuron, please send him directly to the Editor&#8217;s brother at 0109 Mandler Hall, 9500 Gilman Drive, La Jolla, CA 92093-0109. -WT
+</p>
+
+
+
+			</div>
+			<div id="ch-7" class="chapter">
+				<a name="7" class="anchor"></a><br>
+				<h3 id="neurons-beep-at-some-things-more-than-others-continued">Neurons beep at some things more than others (continued)</h3>
+<p>After my broccoli dinner I decided that just because Envelope beeps more when he sees broccoli, it doesn&#8217;t mean that he <em>likes</em> broccoli. It doesn&#8217;t even mean that he prefers it! How can I know that he isn&#8217;t merely annoyed by all my stupid broccoli? As tempting as it is, I don&#8217;t feel comfortable making any statements about a Neuron&#8217;s opinion towards the things he beeps at; all I can really say is whether he&#8217;s beeping more or less than usual.</p>
+<p>But who really cares what Envelope actually wants to tell me? Ultimately, a Neuron&#8217;s beeps might contain useful information about the world around us&mdash;whether that&#8217;s the Neuron&#8217;s intent or not. Maybe this sounds inconsiderate. But consider the following hypothetical conversation (I&#8217;ll translate the beeps to English for your sake):</p>
+<div class="note">
+<p>YOU: Hey Neuron, what&#8217;s up?</p>
+NEURON: Hello. I went to the grocery store yesterday. After the grocery store exploded I bought some green beans.
+</div>
+<p>Neurons, as you might imagine, come from a culture very unlike human culture. In the conversation above the Neuron only wanted you to know that he bought some green beans; but you, on the other hand, were presumably much more interested in learning that the grocery store exploded. On that note, let&#8217;s move forward with the awareness that what we learn about our Neurons&#8217; beeps will, unfortunately, not necessarily be what they intend to tell us at all.</p>
+
+			</div>
+			<div id="ch-8" class="chapter">
+				<a name="8" class="anchor"></a><br>
+				<h3 id="why-we-wear-hats">Why we wear hats</h3>
+<p><img id="im-6" src="images/6.jpeg"></p>
+<p>Once I recognized that Envelope beeped more at broccoli we became a whole lot closer. But knowing what someone talks about is only the first step to getting to know him! I decided to start designing some experiments, like they did in my textbook, and that&#8217;s when things got interesting.</p>
+<p>So, I thought, a Neuron can only adjust the times that he beeps and not the style of the beeps themselves. Then that means I can record a Neuron&#8217;s speech either by noting the exact times he decides to beep (this will require a very expensive digital watch) or the number of times he beeps in a fixed amount of time (this only requires that I know how to count very quickly, which I do).</p>
+<p>In the back of my textbook there were some photos of Dayan, Abbott, and their friends. According to those photos, most people who study Neurons wear hats. First there&#8217;s the <em>rate coding hat</em>, and when you wear that hat it means you only care about how many times your Neurons beep. But if you prefer to record the precise beep times of your Neurons you wear a <em>sombrero</em><sup>*</sup>. Since counting sounded easier than taking precise time measurements (and my watch isn&#8217;t digital, anyway) I decided to buy myself a rate coding hat.</p>
+<p class="ed-note">
+<sup>*</sup> A sombrero is referred to by professional neural decoders today as a <em>temporal coding hat</em>. -WT
+</p>
+
+
+
+			</div>
+			<div id="ch-9" class="chapter">
+				<a name="9" class="anchor"></a><br>
+				<h3 id="a-caution-about-wearing-hats">A caution about wearing hats</h3>
+<p>When my new rate coding hat arrived in the mail I was pretty excited. But I was surprised to see that my new hat came with a caution notice. This is what it said:</p>
+<div class="note">
+<p>CAUTION: By wearing this rate coding hat, you announce to the world that you prefer to count the number of times a Neuron [beeps]. However, the wearer of this hat does not contend that a Neuron only communicates with the number of times he [beeps]; rather, by deciding to ignore a Neuron&#8217;s specific [beep]-arrival times one makes an assumption to help simplify a Neuron-speak translation. It may seem optimistic (or ridiculous) to assume that just by counting beeps one can learn anything about a Neuron, but what else is one to do with his Neuron? Buy a fancier watch and put on a [sombrero]? Try to teach him English?</p>
+</div>
+<p>The note, I think, is trying to say that the hat one wears says nothing about what your Neuron is doing; a hat is worn only to make it clear what perspective the hat-wearer is taking when he tries to make more sense out of his Neuron&#8217;s endless stream of beeps. Wearing a hat is just an assumption&mdash;the caution notice encouraged me to make my assumption explicit: From now on, all I care about a Neuron&#8217;s speech is how many beeps it contains in a fixed amount of time.</p>
+
+			</div>
+			<div id="ch-10" class="chapter">
+				<a name="10" class="anchor"></a><br>
+				<h3 id="the-day-i-counted-661392-beeps">The day I counted 661,392 beeps</h3>
+<p>Once I put on that rate coding hat, I think Envelope understood that I meant business. Well, not business&mdash;I should say friendship. But I didn&#8217;t worry; I think that most Neurons should certainly respect the fact that in order to connect with a human they must be experimented upon in order to be understood.</p>
+<p>Previously I mentioned that if a Neuron says &#8220;BEEP-SILENCE-BEEP-SILENCE-BEEP-BEEP-BEEP&#8221; I could transcribe this as &#8220;1010111.&#8221; But with a rate coding Hat, all I care about the sentence &#8220;BEEP-SILENCE-BEEP-SILENCE-BEEP-BEEP-BEEP&#8221; is that it contains five beeps. Nice and simple!</p>
+<p>So I decided to spend twelve hours of my day dedicated to counting Envelope&#8217;s beeps. I carried around a clipboard and made a tally every single time Envelope beeped, which was quite a lot. Twelve hours later I&#8217;d counted 661,392 beeps. Twelve hours is 43,200 seconds, so that means Envelope beeped, on average, just over 15 times a second.</p>
+<p>It was a crazy day, but now I knew Envelope&#8217;s average beep count. After our incident together with the broccoli I suspected that Envelope was beeping more at broccoli than at other things, but at the time I couldn&#8217;t really prove it. Now I&#8217;d be able to test that belief for sure.</p>
+
+			</div>
+			<div id="ch-11" class="chapter">
+				<a name="11" class="anchor"></a><br>
+				<h3 id="experiment-1-how-to-really-get-to-know-your-neuron">Experiment 1: How to really get to know your Neuron</h3>
+<p><img id="im-7" src="images/7.jpeg"></p>
+<p>The next thing I did while wearing my new hat was to show Envelope a big fat piece of broccoli over and over again and count the number of times he beeped in response. Each time I showed Envelope the broccoli I made sure to show it to him for exactly the same amount of time. And to make sure he didn&#8217;t look away, I simply tied him up to the leg of my kitchen table and fixed his head in place (a bit of twine and a square knot did the trick)<sup>*</sup>.</p>
+<p class="ed-note">
+    
+<sup>*</sup> The methodology described here predates AAALAC standards regarding the prevention of pain and stress in laboratory Neurons. -WT
+</p>
+
+<p><img id="im-8" src="images/8.jpeg"></p>
+<p>The broccoli was the stimulus in this first experiment of mine, and each time I showed my Neuron the broccoli stimulus I called it a trial. During each trial I counted the number of times my Neuron beeped in response at the sight of his broccoli. I wanted to do this right, you know, so I could rigorously prove to myself that Envelope really did beep more at broccoli.</p>
+<p>But even before I began the trials I found myself frustrated at having to make so many more assumptions (beyond my rate coding hat) in order to start experimenting. For instance, how long should each trial last? I decided I&#8217;d show Envelope the broccoli stimulus for exactly one second, but arguably I should repeat the experiment with different trial lengths to see how that changed my results. And are Envelope&#8217;s responses really only a function of the stimulus I show him? I could never be completely sure. Despite all of my best efforts to control the experiment, there was no way to guarantee that my results would ever be as conclusive as I&#8217;d like. All I could hope for in this experiment was that I&#8217;d catch at least a faint glimpse of a pattern in Envelope&#8217;s language.</p>
+<p>If you&#8217;d like to try my experiment at home on your own Neuron, here&#8217;s the general recipe I settled on:</p>
+<ol style="list-style-type: decimal">
+<li>Tie up your Neuron.</li>
+<li>Take two steps away from your Neuron, holding the stimulus where he can&#8217;t see it.</li>
+<li>Show your Neuron the stimulus for exactly one second, and then count how many times he beeps during that second.</li>
+<li>Put the stimulus behind your back again, and write down the number of beeps you just counted.</li>
+<li>Repeat. Show the Neuron the stimulus for one more second, count the beeps, etc. The more trials the better!</li>
+</ol>
+
+			</div>
+			<div id="ch-12" class="chapter">
+				<a name="12" class="anchor"></a><br>
+				<h3 id="my-neuron-is-so-inconsistent">&#8220;My Neuron is so inconsistent!&#8221;</h3>
+<p>The results from my first experiment left me just a bit disappointed. Neurons (unfortunately, including dear Envelope) tend to be extremely inconsistent creatures, and I certainly noticed this in the experiment&#8217;s results. I made the graph below, called a <em>histogram</em>, to record the number of times each response beep count occurred in my experiment. <sup><a href="appendix#1">[1]</a></sup></p>
+<p><span class="graph-title">ENVELOPE&#8217;S RESPONSES TO BROCCOLI (Exp. 1)</span> <img id="im-9" src="images/9.jpeg"></p>
+<p>As you can see, even though I showed Envelope the same stimulus in the same way on each trial, he didn&#8217;t always beep exactly the same number of times in response. Maybe some of the variation is due to all of the short-comings in my experimental design, but anyway most Neurons will change their minds from trial-to-trial for no reason at all. The great thing, though, is that there will still probably be an overall pattern to the results.<sup>*</sup></p>
+<p class="ed-note">
+    
+<sup>*</sup> If the Neuron&#8217;s response beeps are extremely inconsistent, and you&#8217;re sure that you&#8217;ve found his correct response field, you might want to take him to a doctor and get him diagnosed for being &#8220;noisy,&#8221; or having a &#8220;low signal-to-noise ratio.&#8221; A large percentage of Neurons will have this incurable condition. -WT
+</p>
+
+<p>I was expecting to learn something concrete from this experiment. Instead all I got was a weird looking graph with a lot of variation from trial-to-trial. But judging by the tallest bar in the response histogram, Envelope usually beeped around 10 times a second more at broccoli than he did at other things. So my first experiment wasn&#8217;t completely useless.</p>
+
+			</div>
+			<div id="ch-13" class="chapter">
+				<a name="13" class="anchor"></a><br>
+				<h3 id="experiment-2-tuning-your-neuron">Experiment 2: Tuning your Neuron</h3>
+<p><img id="im-10" src="images/10.jpeg"></p>
+<p>Despite Envelope&#8217;s inconsistent beeping in the first broccoli experiment I still wanted to go a bit further and see what else I could find. I thought, for instance, that maybe big broccoli would make him beep more than small broccoli.</p>
+<p>In the next experiment I used the same general strategy as before: I wore a rate coding hat, I showed my Neuron a stimulus, and I recorded his responses. But this time I varied the stimulus size on every trial to see how Envelope changed his beeps in response. Instead of just using the same piece of broccoli on every trial, I gathered a bucket full of variously sized broccolis.</p>
+<p>I figured that since stimuli with a high value in a Neuron&#8217;s response field are supposed to regularly alter his beeping, then if I showed Envelope lots of different sizes of broccoli and each one of them made him beep differently, I could be pretty confident that Envelope&#8217;s beeps were encoding broccoli size.</p>
+<p>I really felt like I was onto something, with my bucket full of broccoli and my experimental set-up and my rate coding hat. (I even had a dream that I was recognized as the world&#8217;s leading Neuron decoder.) But really, scientist or not, anyone can learn something about the world just by listening carefully to a Neuron.</p>
+<p>So I took Envelope out of his cage<sup>*</sup> and showed him the same broccoli as I did in my first experiment, exactly the same way each time. But then, after each trial I randomly chose a broccoli of a different size (I wanted the stimulus size change to be random, so he wouldn&#8217;t know what to expect next) to use for the next trial.</p>
+<p class="ed-note">
+<sup>*</sup> As of July 2026 it is illegal to store your Neuron in a cage in all but the following countries: Argentina, Angola, Cameroon, Ecuador, Honduras, Romania, Russia, USA. -WT
+</p>
+
+<p>Recipe:</p>
+<ol style="list-style-type: decimal">
+<li>Gather a bucket of stimuli, where each stimulus in the bucket has a different value in your Neuron&#8217;s response field.<sup>*</sup></li>
+<li>Tie up your Neuron.</li>
+<li>Close your eyes and pick a stimulus from your bucket of stimuli. Show your Neuron that stimulus for one second, and count the number of times he beeps in response.</li>
+<li>Now, put the stimulus back in your stimulus bucket and randomly choose a new stimulus from your stimulus bucket. Show him the stimulus for one second, record his beep count, etc.</li>
+<li>Repeat step 3 until you have used each one of your stimuli on many different trials.</li>
+</ol>
+<p class="ed-note">
+<sup>*</sup> The author has neglected to mention explicitly that your stimuli should be in some way represented by a numerical value. Since Envelope&#8217;s response field is broccoli size, each stimulus is seen as having a unique level of broccoli-ness, as measured by its diameter. It is unclear how the author might have suggested quantifying other response fields, such as Grandma-ness. -WT
+</p>
+
+<p>After this experiment I had about ten trials for each stimulus, and in each trial I counted my Neuron&#8217;s beep count as his response. I made a big graph of all this data using the broccoli diameter measured in inches as the x-axis and his beep counts above his average beep count as the y-axis. Each dot in this graph is one of Envelope&#8217;s responses I measured during one trial.</p>
+<p><span class="graph-title">ENVELOPE&#8217;S RESPONSES TO BROCCOLI SIZE (Exp. 2)</span> <img id="im-11" src="images/11.jpeg"></p>
+<p>I should mention that I can&#8217;t actually claim all the credit for these experiment ideas. After all, at this point I still couldn&#8217;t decipher anything in my neuroscience textbook past about page sixteen. But why I really wanted to do this experiment was to help me build for Envelope was what&#8217;s called a <em>tuning curve</em> for his response field.</p>
+<p>All I needed to do now was take the average number of beeps Envelope emitted to each stimulus of my last experiment, and then draw a curve through those average values. <sup><a href="appendix#2">[2]</a></sup></p>
+<p><span class="graph-title">ENVELOPE&#8217;S TUNING CURVE FOR BROCCOLI SIZE (Exp. 2)</span> <img id="im-12" src="images/12.jpeg"></p>
+<p>After making this tuning curve, Envelope&#8217;s beeping looked so consistently predicted by the broccoli size that it felt like I was cracking the Voynich manuscript or something. Look at that trend line! &#8220;Envelope!&#8221; I yelled. &#8220;I know why my caged Neuron beeps!&#8221;</p>
+<p>Of course, in my excitement I was mistaken. (Possibly I was just being dramatic.) Since most Neurons only seem to have one response field each, many people assume that a Neuron beeps because his beeps are constantly encoding the magnitude of his response field in his environment.<sup>*</sup> But really, I still don&#8217;t know why my Neuron beeps. In my opinion, all I&#8217;ve really learned is a way to regularly vary his average beep rate.</p>
+<p class="ed-note">
+<sup>*</sup> The neuro-philosopher William Langeford has used this fallacious assumption to argue that a Neuron has no free will in a paper titled &#8220;Discussions of Matter and Meaning in the Neuron&#8221; -WT
+</p>
+
+
+
+			</div>
+			<div id="ch-14" class="chapter">
+				<a name="14" class="anchor"></a><br>
+				<h3 id="using-your-neuron-as-a-broccoli-decoder-a-lie-detector-and-so-much-more">Using your Neuron as a broccoli-decoder, a lie detector, and so much more!</h3>
+<p><img id="im-13" src="images/13.jpeg"></p>
+<p>Naturally, I&#8217;m still not under the impression that Envelope necessarily cares about the size of broccoli. Neurons remind me of my jaded weatherman friend: He doesn&#8217;t care much about his weather report these days but he does still give me an accurate forecast, on average, every night at 5. But unlike with weathermen, with Neurons it&#8217;s not too wild of a hypothesis to suggest that a Neuron&#8217;s language really is merely an encoding of his response field. Just as a weather map is written to inform people about the weather, a Neuron might exist to inform others (be they other Neurons, or its human owner) about the degree of broccoli-ness in his surroundings.</p>
+<p>After plotting Envelope&#8217;s tuning curve I could tell I was really developing as an amateur Neuron decoder. I was also a much better friend. It was at that point that I remember deciding, &#8220;Why not learn to take advantage of Envelope&#8217;s talents for my own uses?&#8221;</p>
+<p>I had a bit of a day-dream&#8230;I imagined putting a Neuron outside my front door: I can&#8217;t see what he sees, but I can still hear what he beeps. I don&#8217;t like to leave the house when I don&#8217;t have to, so I was imagining that there must be some way that I could know when the skies outside are blue just by listening to my Neuron&#8217;s beeps. If that pet Neuron happened to have a response field of blueness, for example, then all I would need to know is the Neuron&#8217;s <em>optimal spike count threshold</em>. Well, that&#8217;s what my textbook called it anyway&mdash;I prefer to call it a <em>magic beep count</em>.</p>
+<p>The magic beep count would give me a sort of rule to use to make guesses about the outside world. If my Neuron&#8217;s magic beep count is 2 beeps, for example, then if I heard my Neuron beep more than 2 times in a second I&#8217;d guess that there is something really blue outside (like a cloudless sky). If he beeped less than 2 times in a second I&#8217;d conclude that there is nothing very blue outside (cloudy sky).</p>
+<p>And that&#8217;s all there is to it! The details weren&#8217;t sorted out yet, but I had a gut feeling that this idea was going to make me rich. I could be a sort of magician, wowing crowds with my ability to perceive blue skies through solid walls&mdash;all with the help of my obedient little Neuron pet.</p>
+
+			</div>
+			<div id="ch-15" class="chapter">
+				<a name="15" class="anchor"></a><br>
+				<h3 id="experiment-3-putting-a-value-on-your-neurons-friendship">Experiment 3: Putting a value on your Neuron&#8217;s friendship</h3>
+<p><img id="im-14" src="images/14.jpeg"></p>
+<p>It took me five tries ordering new Neurons before I found a Neuron that seemed to beep more at blue things (I sent the others back for a refund), and that Neuron&#8217;s name was Harry. I decided to repeat a variation of Experiment 2 on Harry, only this time I&#8217;d use stimuli varying in blueness instead of broccoli-ness.</p>
+<p>Additionally, instead of giving each stimulus a numerical value like I did with broccoli size before, this time I pretended that each stimulus fell into only one of two categories: &#8220;blue&#8221; and &#8220;not-blue.&#8221;</p>
+<p>The experiment&#8217;s results showed me how many times Harry beeped when she saw a &#8220;blue&#8221; stimulus and how many times she beeped when she saw a &#8220;not-blue&#8221; stimulus. What I was looking for was some sort of rule, something like &#8220;If I hear Harry beep more than 6 times in one second, then I can guess she&#8217;s seen something really blue. Otherwise, she must have seen something not-blue.&#8221; I was seeking&mdash;as I&#8217;ve mentioned&mdash;her magic beep count for blueness. (Envelope was not at all offended by my new friend Harry; he was happy to hang out in his cage during these experiments, beeping cheerily to himself.)</p>
+<p><span class="graph-title">HARRY&#8217;S RESPONSES TO BLUE AND NOT-BLUE STIMULI (Exp. 3)</span> <img id="im-15" src="images/15.jpeg"></p>
+<p>The graph I made above from Harry&#8217;s results was extremely helpful, since I can see the histogram of Harry&#8217;s responses to blue things as well as the histogram of her responses to not-blue things&mdash;all in one graph. It helped me see just how many ways there are to interpret her beeping. For instance, every time Harry beeped more than 8 times in a second (to the right of the orange line) it was during a blue trial, and every time she beeped less than 5 beeps in a second (to the left of the blue line) it was during a not-blue trial.</p>
+<p>But the area between the orange and blue line is possibly the most revealing part of the graph: This is the overlapping region where Harry beeped about the same number of times when she saw either type of stimuli. How ambiguous of her! On the other hand, if I found a Neuron whose responses to two different types of stimuli had no overlapping region at all, then I would be able to draw a line right in the middle to decode that Neuron&#8217;s beeps perfectly every time. (And if I had found such a Neuron, believe me: Harry would be out of a job.)</p>
+<p>Harry&#8217;s beeps may encode blueness, but these results made it clear that Harry might still occasionally beep a lot when there is nothing blue, or beep very little when there is something blue. This was going to be a problem if I wanted to put on a magic show where I pretended to be able to see blue things through walls. Magicians aren&#8217;t supposed to be magical on average, you know, they&#8217;re supposed to be magical all the time. According to my experiment&#8217;s results, if I heard Harry beep anywhere between 5 and 9 beeps I&#8217;d have no idea whether there was a blue sky outside or not.</p>
+<p>I decided that 7 beeps in one second looked like a good rule, or <em>criterion</em>, for deciding whether or not Harry had seen something blue. But how accurate was this criterion? And is it really the best criterion possible?<sup>*</sup> I knew that my stage name as a magician was going to be &#8220;The Man Who Speaks in Beeps&#8221;, but before I started putting up advertisements for my show I wanted to pick Harry&#8217;s blueness criterion more carefully.</p>
+<p class="ed-note">
+<sup>*</sup> A criterion is called a magic beep count (or optimal spike count threshold) only when it is a better criterion than any other criterion. -WT
+</p>
+
+
+
+			</div>
+			<div id="ch-16" class="chapter">
+				<a name="16" class="anchor"></a><br>
+				<h3 id="finding-the-best-criterion">Finding the best criterion</h3>
+<p>If I used 7 beeps per second as my criterion, then whenever Harry beeped more than 7 times in one second I&#8217;d guess that she saw something blue. If she beeped more than 7 times and the stimulus really <em>was</em> something blue then that guess is called a <em>hit</em>, because it&#8217;s a correct guess that a blue stimulus was present. But if she saw a blue stimulus and beeped <em>less</em> than 7 times then my guess would be a <em>miss</em>. Here&#8217;s a chart of all the possibilities:</p>
+<p><img id="im-16" src="images/16.jpeg"></p>
+<p>The best criterion for decoding blueness using a Neuron&#8217;s beeps is only a guessing-game away. Here&#8217;s the recipe:</p>
+<ol style="list-style-type: decimal">
+<li>Start your experiment using a criterion of 0 beeps.</li>
+<li>Go through the Neuron&#8217;s results to Experiment 3 and classify trials where she beeped more than the criterion as a guess that the stimulus was blue, and trials where she beeped less than the criterion as a guess that the stimulus was not-blue.</li>
+<li>Compare the guesses on each trial with the actual stimulus on each trial, classifying each guess as either a hit, miss, false alarm, or a correct rejection.</li>
+<li>How many hits (H), misses (M), correct rejections (CR), and false alarms (FA) were there in total? Tally these counts for each criterion.</li>
+<li>Use a criterion of 1 beep and repeat steps 1-4.</li>
+<li>Use a criterion of 2 beeps and repeat steps 1-4.</li>
+<li>Use a criterion of X beeps and repeat steps 1-4, etc. etc.</li>
+</ol>
+<p>I could now calculate a variety of different rates for each of my criterion (using the results from the experiment above):</p>
+<ul>
+<li>hit rate = H/(H+M)</li>
+<li>correct rejection rate = CR/(FA+CR)</li>
+<li>false alarm rate = FA/(FA+CR)</li>
+<li>miss rate = M/(H+M)</li>
+<li>accuracy rate = (H+CR)/(H+CR+FA+M)</li>
+<li>incorrect rate = (FA+M)/(H+CR+FA+M)</li>
+</ul>
+<p>If I decided that I wanted my criterion for Harry to maximize the number of times that I can correctly guess &#8220;Harry saw something blue,&#8221; I&#8217;d pick the criterion that gives me the highest hit rate. If I wanted to maximize the number of times I can guess correctly blue <em>or</em> not-blue, I&#8217;d use the criterion with the highest accuracy rate. <sup><a href="appendix#3">[3]</a></sup></p>
+
+			</div>
+			<div id="ch-17" class="chapter">
+				<a name="17" class="anchor"></a><br>
+				<h3 id="when-a-neuron-isnt-worth-a-dime">When a Neuron isn&#8217;t worth a dime</h3>
+<p>If Harry ever wants to take a vacation from performing in my magic shows, I&#8217;d have to fire her and order more Neurons until I found another one whose beeps encode blueness. But instead of listening to a Neuron&#8217;s beeps to guess whether there is something blue present, what other options do I have?</p>
+<p>I was considering just flipping a coin and guessing &#8220;blue&#8221; if the coin is heads and &#8220;not-blue&#8221; if it&#8217;s tails. (A coin might be a good alternative to a Neuron, I thought, because I wouldn&#8217;t have to feed a coin and give it shelter&mdash;plus they make a lot less noise.) But, as I have verified, a coin does not know anything about blueness and so a coin flip is not actually going to help me at all.</p>
+<p>But a coin flip, being a completely unreliable signal for blueness, <em>can</em> give me a good worst-case scenario. If it&#8217;s equally likely for a stimulus to be blue or not-blue, then my accuracy rate in the long run when flipping a coin to guide my decisions would be 50%, and my incorrect rate would also be 50%. (Try it if you don&#8217;t believe me.) With this in mind, a Neuron is only going to useful to me if he/she drastically outperforms a coin flip&mdash;e.g., if there is a criterion I can use with the Neuron to ensure that my accuracy rate will be well above 50% on average. Otherwise, the Neuron&#8217;s beeps are no better than a coin flip.</p>
+
+			</div>
+			<div id="ch-18" class="chapter">
+				<a name="18" class="anchor"></a><br>
+				<h3 id="neuron-discrimination">Neuron Discrimination</h3>
+<p><img id="im-17" src="images/17.jpeg"></p>
+<p>Because my miss rate using Harry was higher than zero, I knew that sometimes I was going to get some guesses wrong during my magic show no matter what criterion I chose. And unfortunately, after my first performance with Harry as &#8220;The Man Who Speaks in Beeps,&#8221; I definitely got the feeling my audience wasn&#8217;t that impressed with some of my mistakes.</p>
+<p>By the end of the show though, I noticed a pattern in my audience&#8217;s booing: It was just the false alarm guesses (as opposed to incorrect guesses in general) that were making the audience skeptical of my supposed magical talents. I&#8217;d initially chosen a criterion for Harry&#8217;s beeps that maximized my proportion correct&mdash;the accuracy rate&mdash;but that night I realized I should&#8217;ve instead aimed to minimize my false alarm rate. In general, I&#8217;d learned that my criterion choice might need to vary from night to night depending on what would keep each audience happy.</p>
+<p>But if I was going to be changing my criterion every night, what I now needed was some sort of assessment to give to Harry to find my performance <em>overall</em> at guessing blueness, rather than my hit rates and false alarms rates, which depend on the criterion I choose.</p>
+<p>Luckily, I found in my textbook that one can measure how trustworthy a Neuron is at encoding stimuli (such as blueness) by finding something called its <em>discrimination</em>. This value gives you an idea about how well one could do at guessing the presence of a certain stimulus using the Neuron&#8217;s beep count and a range of different criterions. Since it&#8217;s a probability, just like the rates I calculated earlier, it can be anywhere between 0.0 (0%) and 1.0 (100%).</p>
+<p>I went back to my Experiment 3 results and calculated H/(H+M) and FA/(FA+CR) for each trial&mdash;this gave me a hit rate (HR) and false alarm rate (FAR) at guessing blueness using each criterion. Then I graphed all of my results, with the FAR on the x-axis and the HR on the y-axis, so that each point on the plot was the false alarm rate and hit rate I got from using a certain criterion. The resulting graph is called an <em>ROC curve</em><sup>*</sup>, and surprisingly enough, it is exactly the graph I need to find my Neuron&#8217;s discrimination.</p>
+<p class="ed-note">
+<sup>*</sup> ROC (Receiver Operating Characteristic) analysis was first used by the United States army during World War II to assess the performance of their radars and radar operators. -WT
+</p>
+
+<p>I was told, you see, that the secret to finding a Neuron&#8217;s discrimination is to take the area under his ROC curve. <sup><a href="appendix#4">[4]</a></sup> Having learned to trust this odd graph, I calculated the area under Harry&#8217;s curve. It was 0.82, or 82%. This value is supposedly Harry&#8217;s discrimination probability for blue stimuli. But what does this really mean?</p>
+<p><span class="graph-title">HARRY&#8217;S ROC CURVE FOR DISCRIMINATING BLUENESS</span> <img id="im-18" src="images/18.jpeg"></p>
+
+			</div>
+			<div id="ch-19" class="chapter">
+				<a name="19" class="anchor"></a><br>
+				<h3 id="a-scene-from-my-magic-show">A scene from my magic show</h3>
+<div class="note">
+<p>ME: To explain what a Neuron&#8217;s discrimination value means I won&#8217;t need to use any criterion at all. But first, I&#8217;m going to need a volunteer from the audience. Anyone? Anyone? Yes, you! The lovely little Neuron at the back, with the long dendrites.</p>
+</div>
+<p>The Neuron is actually Harry, pretending to be an audience member; she now walks up onto the stage.</p>
+<div class="note">
+<p>HARRY: Hello.</p>
+<p>ME: Welcome and hello; now what&#8217;s your discrimination at blueness?</p>
+<p>HARRY: 82%.</p>
+<p>ME: Lovely! Just perfect. Now you&#8217;re going to get to help me out with a little demonstration. I, The Magical Man Who Speaks in Beeps, am going to perform a magic trick. Stand right over there, Neuron, on the other side of the wall.</p>
+<p>HARRY: Okay.</p>
+<p>ME: Now, I&#8217;m going to close my eyes. <em>[I turn to speak to the audience:]</em> Audience, while my eyes are closed I want you to show this lovely little Neuron two stimuli&mdash;first one and then the other, one of them blue and one of them not blue&mdash;in either order that you choose. We&#8217;ll do this over and over again, and I think in the end you will all recognize the expected value of my magical powers. Ready?</p>
+<p>AUDIENCE: Ready.</p>
+</div>
+<p>An audience member sitting in the front row shows Harry a yellow tennis ball (not-blue) and she beeps 6 times. Then he shows her a blue yo-yo and she beeps 8 times.</p>
+<div class="note">
+<p>ME: Hmm&#8230;I guess that the first thing you showed was not blue, but the second one was blue.</p>
+<p>AUDIENCE: Ooohhh&#8230;</p>
+</div>
+<p>I was correct!</p>
+<p>The same audience member as before shows Harry a bit of twine (not-blue) and she flinches, then beeps 7 times. Then he shows her a block of blue cheese and she beeps 6 times.</p>
+<div class="note">
+<p>ME: The first one was blue, the second one was not blue.</p>
+<p>AUDIENCE: Ahhhhh&#8230;.</p>
+</div>
+<p>I was wrong!</p>
+<p>By the end of the show, after 600 repetitions of my experiment with the audience, I&#8217;ve guessed correctly 492 times and incorrectly 108 times. And it turns out (magically enough) that the percentage I guessed correctly was 82%, which is exactly the lovely little Neuron&#8217;s discrimination at blueness!</p>
+<div class="note">
+<p>ME: Thank you, thank you, really it&#8217;s all just magic&#8230;</p>
+</div>
+<p>The audience stands and applauds politely. No hecklers tonight.</p>
+<p>What a Neuron&#8217;s discrimination value represents in general, as the scene above demonstrates, is the probability that one can correctly guess which stimuli was which after hearing the Neuron&#8217;s responses. The great thing about this metric is that it doesn&#8217;t measure the proportion correct using just one criterion&mdash;rather, it rates one&#8217;s ability to distinguish between the stimuli using <em>any</em> criterion<sup>*</sup>. Dayan and Abbott call a measurement like this a &#8220;criterion-free metric.&#8221;</p>
+<div class="ed-note">
+<sup>*</sup> A Neuron&#8217;s discrimination value is calculated by considering the rates from all possible criteria, allowing this single value to represent a summary of one&#8217;s overall performance. -WT
+</div>
+<p>During my usual performances I prefer to choose a single criterion for the night for my magic, rather than relying on the law of averages as I did in the little scene I showed you above. How I choose the criterion I use varies with each audience: Some nights an audience might be skeptical of false alarm guesses, so I&#8217;ll just choose the best criterion for that case; other nights the audience might prefer a high accuracy rate, and I&#8217;ll choose a different criterion. But most importantly, knowing Harry&#8217;s discrimination at decoding blueness allows me to grade her overall performance without regard to the criterion I choose to use on any given night.</p>
+
+			</div>
+			<div id="ch-20" class="chapter">
+				<a name="20" class="anchor"></a><br>
+				<h3 id="gardening-with-neurons">Gardening with Neurons</h3>
+<p>Luckily for me, Neurons with other response fields and high discrimination values are good for all kinds of things besides just magic shows. I happened to find a Neuron who beeps a lot at really ripe tomatoes, and in fact I&#8217;m now growing a tomato plant in my backyard garden. Each day when I wake up I&#8217;d like to know if there&#8217;s a ripe tomato outside without having to look for myself. A false alarm would be a huge let-down, but a miss might mean the bugs get to the ripe tomato before I do. So I chose a criterion to minimize the sum of my Neuron&#8217;s false alarm rate and miss rate (i.e. the incorrect rate), and then that was it! All I have to do now is listen to my Neuron and wait&#8230;</p>
+
+			</div>
+			<div id="ch-21" class="chapter">
+				<a name="21" class="anchor"></a><br>
+				<h3 id="conclusion">Conclusion</h3>
+<p><img id="im-19" src="images/19.jpeg"></p>
+<p>Getting to know my Neurons was tough at times, and it essentially required learning a new language. But it&#8217;s made me think a lot about what it means to really communicate and make decisions, as well as how difficult it can sometimes be to understand what someone else means. (Also, it&#8217;s made me rich. &#8220;The Man Who Speaks in Beeps&#8221; is now an international sensation.<sup>*</sup>)</p>
+<p class="ed-note">
+<sup>*</sup> Considering our discussion in the Foreword, this is almost certainly untrue. -WT
+</p>
+
+<p>Envelope and I, we&#8217;ve tried many different ways of understanding each other and they&#8217;ve all been helpful. Now when we go out to dinner there aren&#8217;t so many awkward silences. And as for Harry, we rarely go out to dinner because she doesn&#8217;t beep much at the restaurants I pick<sup>*</sup>. (Anyway, she takes our magic performances very seriously and is trying valiantly to get her blueness discrimination up to 90% so we can take our show to Vegas.) But my ripe-tomato Neuron friend, he&#8217;s been of no use to me yet. He hasn&#8217;t ever beeped above the criterion I chose for him: Still no ripe tomatoes in my garden, apparently.</p>
+<p class="ed-note">
+<sup>*</sup> The author evidently noticed that if one finds the exact opposite of what a Neuron beeps a lot at, that stimulus will usually have an inhibitive effect&mdash;meaning it will make the Neuron beep far less than average. At the time the author wrote this book in 2012, anti-broccoli did not yet exist. Orange restaurants, on the other hand, did. And so by taking his Neuron Harry to orange restaurants the author was finally able to answer his question &#8220;When will he stop [beeping]?&#8221; The answer: Show him an inhibitive stimulus. -WT
+</p>
+
+<p>I hope that after reading all this you&#8217;re feeling a little better about your Neuron friend and how to approach its endless beeping. So far I&#8217;ve explained how to find a Neuron&#8217;s response field, how to wear a rate coding hat, how to choose a criterion for decoding a Neuron, and how to grade your Neuron&#8217;s overall helpfulness at discriminating between two different stimuli. There are so many more ways of finding something of interest in your Neuron&#8217;s beeps, and most likely no one&#8217;s even thought of the best ways yet.</p>
+<p>While learning to understand a Neuron pet may be a handy skill occasionally, there&#8217;s still a lot more we can aim for. After all, our brains are full of Neurons, and each one of those beeping guys seems to be encoding something useful just like my pet Neurons do. In fact, most people believe that human consciousness is nothing more than a collection of beeping Neurons. If so much can be gained from listening to a single Neuron in isolation, just imagine the multitude of information gained from a network of Neurons communicating to each other!<sup>*</sup></p>
+<p>Since I can easily tell if it&#8217;s cold enough outside to put on a scarf, something in my brain must know how to decode all the beeping of the relevant Neurons in my brain to give me my decision. Whether or not there&#8217;s really a magic beep count for the Neurons in my brain who discriminate things like coldness or scarf-time, it is certainly possible that only by the collective responses of my Neurons am I able to take a step outside and make any decision at all&mdash;most importantly, &#8220;Hey, I should put on my scarf.&#8221; Who knows?</p>
+<p class="ed-note">
+<sup>*</sup> I encourage you to make a donation to the World Neuron Foundation, a non-profit organization dedicated to the extraction, herding, and domestication of wild Neuron networks into family-friendly Neuron pets. -WT
+</p>
+
+
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="static/speak-neuron.js"></script>
+</body>
+</html>
