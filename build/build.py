@@ -5,7 +5,7 @@ import os.path
 from smartypants import smartypants
 from unidecode import unidecode
 
-from md_build import BASEDIR, md_to_html_inner, md_to_html
+from md_html_build import BASEDIR, md_to_html_inner, md_to_html
 
 def html_substitutions(content):
     content = unidecode(content)

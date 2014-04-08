@@ -6,7 +6,7 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-	<span id="home-link"><a href="http://www.jehosafet.com">take me back</a></span>
+	<span id="home-link"><a href="http://www.jehosafet.com">take me home</a></span>
 	<div class="wrapper">
 		<div id="sidebar" class="unselectable">
 			<div id="nav-title">
