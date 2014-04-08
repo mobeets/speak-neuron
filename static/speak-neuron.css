@@ -6,6 +6,14 @@ a.anchor{
     top: -100px;
     visibility: hidden;
 }
+/* hopefully avoids blurry images */
+img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
 
 sup {
     vertical-align: baseline;
@@ -235,6 +243,7 @@ body img {
     margin-left: auto;
     margin-right: auto;
 }
+
 #im-1a {
     /*position: fixed;*/
     /*height: 200px;*/
