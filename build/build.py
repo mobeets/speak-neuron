@@ -30,6 +30,7 @@ def render_chapter_html(infile):
         # print 'WARNING: Invalid filename: {0}'.format(infile)
         # raise Exception("Invalid filename: {0}".format(infile))
     words = md_to_html_inner(infile)
+    words = words.replace('<img ', '<img class="drawn" ')
     return [name, number, words]
 
 def make_content(infiles):

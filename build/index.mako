@@ -1,10 +1,9 @@
 ## -*- coding: utf-8 -*-
 <html>
 <head>
-    <meta name=viewport content="width=715, initial-scale=1">
+    <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<span id="home-link"><a href="http://www.jehosafet.com">the way out</a></span>
 	<div id="wrapper">
 		<div id="sidebar" class="unselectable">
 			<div id="nav-title">
@@ -48,7 +47,6 @@
 		</div>
 	</div>
 	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<script type="text/javascript" src="static/speak-neuron.js"></script>
 </body>
 </html>

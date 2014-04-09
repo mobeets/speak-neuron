@@ -22,4 +22,4 @@ Illustrated in Melbourne, Australia
 This book is presented subject to the condition that it shall not, by way of trade or otherwise, be lent, re-sold, hired out, read, looked at, printed and then placed on a bookshelf, or otherwise circulated unless the reader pledges to stop watching sub-par television shows.
 </div>
 <hr>
-Published by <a href="https://twitter.com/jehosafet" target="_blank">@jehosafet</a>.
+Published by <a href="http://www.jehosafet.com" target="_blank">jehosafet</a>.

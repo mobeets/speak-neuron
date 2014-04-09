@@ -97,7 +97,7 @@ function get_anchor_set_chapter(){
 $(function() {
 	max_pos = +$('#total').html();
 	get_anchor_set_chapter();
-	toggle_link_img();
+	// toggle_link_img();
 	add_links_to_glossary();
 	show_links_to_chapters_on_title();
   	$('body').keydown(function(event) {
@@ -108,9 +108,6 @@ $(function() {
   			next_click();
   		}
   	});
-  	$('#begin').on("swipeleft", next_click);
-  	$('#prev').on("swipeleft", next_click);
-  	$('#next').on("swiperight", prev_click);
 	$('#prev').click(prev_click);
 	$('#next').click(next_click);
 	$('#begin').click(next_click);
