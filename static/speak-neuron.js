@@ -94,10 +94,19 @@ function get_anchor_set_chapter(){
 	show_pos(pos);
 }
 
+
+
 $(function() {
+	// banner not absolute if width too small
+	if ($(window).width() < 778) {
+		$('#sidebar').css('position', 'relative');
+		$('#sidebar').css('width', '100%');
+	}
+	else {
+		toggle_link_img();
+	}
 	max_pos = +$('#total').html();
 	get_anchor_set_chapter();
-	// toggle_link_img();
 	add_links_to_glossary();
 	show_links_to_chapters_on_title();
   	$('body').keydown(function(event) {
