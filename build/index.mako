@@ -1,10 +1,10 @@
 ## -*- coding: utf-8 -*-
 <html>
 <head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link href='static/speak-neuron.css' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
 	<span id="home-link"><a href="http://www.jehosafet.com">the way out</a></span>
@@ -50,6 +50,7 @@
 			% endfor
 		</div>
 	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="static/speak-neuron.js"></script>
 </body>
 </html>
