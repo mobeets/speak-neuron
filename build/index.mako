@@ -5,7 +5,7 @@
 </head>
 <body>
 	<span id="home-link"><a href="http://www.jehosafet.com">the way out</a></span>
-	<div class="wrapper">
+	<div id="wrapper">
 		<div id="sidebar" class="unselectable">
 			<div id="nav-title">
 				<h1><a href="">Speak Neuron</a></h1>

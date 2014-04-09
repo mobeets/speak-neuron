@@ -16,7 +16,6 @@ sup {
 hr {
     border: 0;
     border-bottom: 1px dotted black;
-    /*background: #999;*/
 }
 
 p {
@@ -69,12 +68,15 @@ body {
     line-height: 140%;
 }
 
-.wrapper {
+#wrapper {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: green;
     overflow: hidden;
 }
 
@@ -84,7 +86,7 @@ body {
     position: fixed;
     width: 700px;
     height: 70px;
-    top: 0px;
+    top: 0;
     z-index: 100;
     background-color: white;
     border-bottom: 1px solid;
@@ -153,17 +155,10 @@ body {
 
 #appendix, #glossary, #chapters {
     overflow: hidden;
-    /*top: 100px;*/
-}
-#chapters {
-    /*top: 150px;*/
-    margin: 0px;
-    padding: 0px;
 }
 
 #glossary .term-inner {
     font-style: italic;
-    /*text-decoration: underline;*/
 }
 #glossary .term {
     width: 20%;
@@ -172,9 +167,6 @@ body {
 #glossary .defn {
     width: 80%;
     float: left;
-}
-#glossary p {
-    /*font-style: italic;*/
 }
 
 #appendix p {
@@ -186,7 +178,6 @@ body {
 #appendix h3 {
     border-bottom: 1px dotted;
     font-weight: bold;
-    /*font-style: italic;*/
 }
 
 #copyright {
@@ -197,9 +188,7 @@ body {
     margin-bottom: 50px;
 }
 .chapter h3 {
-    /*padding-left: 0px;*/
     font-weight: bold;
-    /*font-style: italic;*/
 }
 
 #glossary .ed-note {
@@ -232,13 +221,13 @@ body {
     margin-bottom: 12px;
     /*text-align: center;*/
 }
-body img {
+
+img {
     height: 350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 #im-1a {
     /*position: fixed;*/
     /*height: 200px;*/
