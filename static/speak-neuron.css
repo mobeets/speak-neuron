@@ -44,7 +44,7 @@ h1 a {
 
 #home-link {
     font-style: italic;
-    font-size: 11px;
+    font-size: 70%;
     top: 40px;
     left: 40px;
 }
@@ -184,6 +184,7 @@ body {
 }
 
 .chapter {
+    display: none;
     margin-bottom: 50px;
 }
 .chapter h3 {

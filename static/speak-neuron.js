@@ -108,6 +108,9 @@ $(function() {
   			next_click();
   		}
   	});
+  	$('#begin').on("swipeleft", next_click);
+  	$('#prev').on("swipeleft", next_click);
+  	$('#next').on("swiperight", prev_click);
 	$('#prev').click(prev_click);
 	$('#next').click(next_click);
 	$('#begin').click(next_click);
