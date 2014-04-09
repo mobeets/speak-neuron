@@ -1,7 +1,7 @@
 ## -*- coding: utf-8 -*-
 <html>
 <head>
-    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=viewport content="width=715, initial-scale=1">
 </head>
 <body>
 	<span id="home-link"><a href="http://www.jehosafet.com">the way out</a></span>
