@@ -134,10 +134,6 @@ body {
     height: 17px;
     margin-top: 2px;
 }
-#link-icon img {
-    height: 17px;
-    margin-top: 2px;
-}
 #book-icon img {
     height: 23px;
     margin-top: 2px;
@@ -150,8 +146,9 @@ body {
 #nav-page #begin {
     color: green;
 }
-#sidebar #prev:hover, #sidebar #next:hover, #sidebar #begin:hover {
+#prev:hover, #next:hover, #begin:hover {
     border-bottom: 1px dotted;
+    cursor: pointer;
     cursor: hand;
 }
 

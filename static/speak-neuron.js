@@ -54,7 +54,6 @@ function get_pos() {
 	return +$('#cur').html();
 }
 function set_pos(pos) {
-	$('#link-icon a[href]').attr('href', '#' + pos);
 	$('#cur').html(pos);
 
 	var pathname = window.location.pathname;
