@@ -56,6 +56,13 @@ function get_pos() {
 function set_pos(pos) {
 	$('#link-icon a[href]').attr('href', '#' + pos);
 	$('#cur').html(pos);
+
+	var pathname = window.location.pathname;
+	var url = window.location.hash;
+	if (pathname.indexOf('glossary') == -1 && pathname.indexOf('appendix') == -1) {
+		var idx = url.indexOf("#");
+		window.location.hash = idx != -1 ? url.substring(0, idx) + '#' + pos : url + '#' + pos;
+	}
 }
 
 function prev_click() {
