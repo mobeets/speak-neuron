@@ -93,7 +93,7 @@ function get_anchor_set_chapter(){
 	if (hash == 'foreword') {
 		pos = 0;
 	}
-	else if (hash.length > 0 && num_hash > -1 && num_hash < max_pos) {
+	else if (hash.length > 0 && num_hash > -1 && num_hash <= max_pos) {
 		pos = num_hash;
 	}
 	set_pos(pos);
