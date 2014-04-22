@@ -270,7 +270,7 @@ img.drawn {
 #im-5, #im-18 {
     transform: rotate( .0001deg );
     -ms-transform:rotate(.0001deg); /* IE 9 */
-    -webkit-transform:rotate(.0001deg); /* Opera, Chrome, and Safari */
+    /* -webkit-transform:rotate(.0001deg); */ /* Opera, Chrome, and Safari */
 }
 
 .unselectable {
