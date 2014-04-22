@@ -1,17 +1,22 @@
 var max_pos;
 
 var glossary = ['criterion', 'discrimination', 'histogram', 'magic beep count', 'rate coding hat', 'response field', 'ROC curve', 'sombrero', 'stimulus', 'tuning curve'];
-function wrap_term_in_link() {
-	old_html = $(this).html();
-	new_html = old_html.replace(new RegExp(word_match), new_word);
-	$(this).html(new_html);
-}
 function add_links_to_glossary() {
+	function escapeRegExp(string) {
+    	return string.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+	}
+	function replaceAll(find, replace, str) {
+  		return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+	}
+	function wrap_term_in_link() {
+		old_html = $(this).html();
+		new_html = replaceAll(word, new_word, old_html);
+		$(this).html(new_html);
+	}
 	for (i in glossary) {
 		word = glossary[i];
 		word_link = word.replace(/\s+/g, '-').toLowerCase();
-		word_match = '(' + word + ')'
-		new_word = '<a class="gloss-link word-' + word_link + '" href="glossary#' + word_link + '">$1</a>';
+		new_word = '<a class="gloss-link word-' + word_link + '" href="glossary#' + word_link + '">' + word + '</a>';
 		
 		$('.chapter p:not(.ed-note)').each(wrap_term_in_link);
 		$('#appendix p:not(.ed-note)').each(wrap_term_in_link);
@@ -107,6 +112,7 @@ $(function() {
 	if ($(window).width() < 778) {
 		$('#sidebar').css('position', 'relative');
 		$('#sidebar').css('width', '100%');
+		// $('.gloss-link').css('border-bottom', '1px dotted');
 	}
 	else {
 		toggle_link_img();

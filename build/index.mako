@@ -7,6 +7,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta property="og:image" content="http://speak-neuron.github.io/images/face.jpeg"/>
+    <meta name="description" content="Speak Neuron, an illustrated guide to understanding your new Neuron pet.">
 	<link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

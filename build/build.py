@@ -9,12 +9,8 @@ from md_html_build import BASEDIR, md_to_html_inner, md_to_html
 
 def html_substitutions(content):
     content = unidecode(content)
-    content = content.replace('--', '&mdash;')
     content = content.replace('(c)', '&copy;')
-    content = content.replace('&quot;', '"')
     content = smartypants(content)
-    content = content.replace('(*)', '*').replace('*', '<sup>*</sup>')
-    content = re.sub(r'(\[(\d)\])', r'<sup><a href="appendix#\2">\1</a></sup>', content)
     return content
 
 def render_chapter_html(infile):
@@ -31,6 +27,10 @@ def render_chapter_html(infile):
         # raise Exception("Invalid filename: {0}".format(infile))
     words = md_to_html_inner(infile)
     words = words.replace('<img ', '<img class="drawn" ')
+    words = words.replace('--', '&mdash;')
+    words = words.replace('&quot;', '"')
+    words = words.replace('(*)', '*').replace('*', '<sup>*</sup>')
+    words = re.sub(r'(\[(\d)\])', r'<sup><a href="appendix#\2">\1</a></sup>', words)
     return [name, number, words]
 
 def make_content(infiles):
