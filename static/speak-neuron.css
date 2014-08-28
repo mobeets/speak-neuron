@@ -204,16 +204,16 @@ body {
 }
 .ed-note {
     font-style: italic;
-    margin-left: 40px;
-    margin-right: 40px;
-    min-width: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /*min-width: 200px;*/
     color: gray;
 }
 .note {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 12px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 10px;
     padding-top: 5px;
     padding-left: 15px;
